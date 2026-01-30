@@ -1,0 +1,318 @@
+:root {
+    --primary: #0a1128;
+    --orange: #f97316;
+    --text: #334155;
+    --white: #ffffff;
+}
+
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family: 'Poppins', sans-serif; color: var(--text); scroll-behavior: smooth; }
+.container { max-width: 1200px; margin: auto; padding: 0 20px; }
+.section { padding: 80px 0; }
+.bg-dark { background: var(--primary); color: white; }
+
+/* Navigation */
+header { background: #fff; padding: 20px 0; position: sticky; top:0; z-index: 1000; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+nav { display: flex; justify-content: space-between; align-items: center; }
+.logo { font-family: 'Montserrat'; font-weight: 800; font-size: 1.4rem; color: var(--primary); }
+.logo span { color: var(--orange); }
+.header-nav .logo, header nav .logo { display: flex; align-items: center; gap: 10px; }
+.nav-logo { height: 52px; width: auto; display: inline-block; }
+.logo { margin-left: 40px; }
+.logo-figure { display: flex; flex-direction: column; align-items: center; }
+.logo-sub { font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 0.75rem; color: var(--orange); text-transform: uppercase; letter-spacing: 0.6px; margin-top: 4px; }
+.logo-main { font-family: 'Montserrat'; font-weight: 800; font-size: 1.4rem; color: var(--primary); }
+.nav-links { display: flex; list-style: none; gap: 30px; }
+.nav-links a { text-decoration: none; color: var(--primary); font-weight: 500; font-size: 0.9rem; }
+.btn-nav { background: var(--primary); color: white; padding: 10px 20px; border-radius: 4px; text-decoration: none; font-size: 0.8rem; font-weight: 600; }
+/* Mobile nav toggle */
+.nav-toggle { display: none; background: transparent; border: none; font-size: 1.6rem; cursor: pointer; color: var(--primary); }
+
+/* Hero */
+.hero { height: 80vh; background: linear-gradient(rgba(10, 17, 40, 0.85), rgba(10, 17, 40, 0.85)), url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=1400') center/cover; display: flex; align-items: center; color: white; }
+.badge { background: var(--orange); padding: 5px 15px; font-weight: 700; font-size: 0.7rem; border-radius: 4px; display: inline-block; margin-bottom: 20px; }
+h1 { font-family: 'Montserrat'; font-size: 3.5rem; line-height: 1.2; margin-bottom: 20px; }
+.hero-btns { display: flex; gap: 15px; }
+.btn-orange { background: var(--orange); color: white; padding: 15px 30px; border-radius: 4px; text-decoration: none; font-weight: 700; }
+.btn-outline { border: 2px solid white; color: white; padding: 13px 30px; border-radius: 4px; text-decoration: none; font-weight: 700; }
+
+/* About */
+.about-flex { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+.about-img { position: relative; }
+.about-img img { width: 100%; border-radius: 12px; }
+.experience { position: absolute; bottom: -20px; right: -20px; background: var(--orange); color: white; padding: 25px; border-radius: 12px; font-weight: 800; font-size: 2rem; text-align: center; line-height: 1; }
+.experience span { display: block; font-size: 0.8rem; font-weight: 400; }
+.tag { color: var(--orange); font-weight: 700; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 1px; }
+.points { margin-top: 20px; display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.pt i { color: var(--orange); margin-right: 8px; }
+
+/* Services */
+.title-center { text-align: center; font-family: 'Montserrat'; font-size: 2.5rem; margin-bottom: 10px; }
+.subtitle { text-align: center; margin-bottom: 50px; opacity: 0.8; }
+.white-op { color: rgba(255,255,255,0.7); }
+.grid-services { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+.s-card { padding: 50px 30px; border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; text-align: center; transition: 0.3s; }
+.s-card:hover { border-color: var(--orange); transform: translateY(-10px); background: rgba(255,255,255,0.02); }
+.s-card .material-symbols-outlined { font-size: 2.5rem; color: var(--orange); margin-bottom: 20px; }
+.s-card img.service-icon { width: auto; max-height: 96px; margin: 0 auto 18px; display:block; object-fit: contain; }
+.s-card img.service-icon + h3 { margin-top: 8px; }
+
+/* Map */
+.map-box { border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+
+/* Footer */
+footer { background: #050a14; color: white; padding: 48px 0 20px; }
+.footer-grid { display: grid; grid-template-columns: 1fr 360px; gap: 30px; align-items: start; padding-bottom: 24px; }
+.f-brand { display:flex; flex-direction:column; gap:10px; }
+.f-brand .logo { color: var(--white); }
+.f-brand p { opacity: 0.9; margin: 4px 0; }
+.f-slogan { font-size: 0.95rem; color: rgba(255,255,255,0.92); margin: 6px 0 4px; font-weight:500; }
+.socials { margin-top: 12px; }
+.socials a { color: white; margin-right: 12px; transition: 0.3s; display:inline-flex; align-items:center; justify-content:center; width:44px; height:44px; border-radius:8px; background: rgba(255,255,255,0.02); }
+.socials a:hover { transform: translateY(-2px); background: rgba(255,255,255,0.04); }
+
+/* Social SVG / icon sizing */
+.social-icon { font-size: 34px; color: white; display: inline-flex; align-items: center; justify-content: center; line-height: 1; }
+.socials img.social-icon { width: 22px; height: 22px; display: inline-block; }
+.socials a .social-icon { transition: 0.25s; }
+.socials a:hover .social-icon { color: var(--orange); transform: translateY(-2px); }
+.wa-icon { font-size: 32px; color: #ffffff; }
+.wa-float { background: #25d366; }
+.f-contact { display:flex; flex-direction:column; align-items:flex-start; gap:8px; }
+.f-contact h3 { margin-bottom: 8px; font-family: 'Montserrat'; }
+.f-contact p { margin: 0; opacity: 0.9; }
+.bottom { text-align: center; padding: 18px 0 6px; border-top: 1px solid rgba(255,255,255,0.05); font-size: 0.8rem; opacity: 0.6; }
+
+/* New professional footer styles */
+.footer-new { padding: 48px 0; background: #050a14; color: #fff; }
+.footer-new .footer-columns { display: flex; gap: 36px; align-items: flex-start; justify-content: center; flex-wrap: wrap; }
+.footer-new .f-col { flex: 0 0 auto; min-width: 200px; text-align: left; }
+.footer-new .f-brand { display: flex; align-items: center; gap: 8px; justify-content: flex-start; }
+.footer-new .f-brand .nav-logo { height: 56px; margin-right: 8px; }
+.footer-new .brand-info { flex: 1; display:flex; flex-direction:column; gap:4px; align-items: center; }
+.footer-new .social-links { display:flex; gap:10px; margin-top:0; }
+.footer-new .social-links a { color: #fff; font-size: 18px; margin: 0 6px; text-decoration: none; display:inline-flex; align-items:center; justify-content:center; width:40px; height:40px; background: var(--orange); border-radius:8px; transition: background .18s, transform .18s, opacity .18s; }
+.footer-new .social-links a:hover { opacity: 0.9; transform: translateY(-3px); }
+.footer-new .social-links a i { color: #fff; font-size: 18px; }
+.footer-new .brand-name { font-family: 'Montserrat'; font-weight: 800; font-size: 1.15rem; color: #fff; text-align: center; }
+.footer-new .f-slogan { color: rgba(255,255,255,0.85); margin: 4px 0 8px; }
+.footer-new h4 { margin-bottom: 10px; font-size: 1rem; color: #fff; }
+.footer-new .f-contact p, .footer-new .f-links li { margin: 8px 0; color: rgba(255,255,255,0.9); }
+.footer-new .col-body { display:flex; flex-direction:column; gap:6px; align-items:center; }
+.footer-new .f-col h4 { text-align: center !important; }
+.footer-new .f-links ul { list-style: none; padding: 0; margin: 0; }
+.footer-new .f-links a { color: rgba(255,255,255,0.9); text-decoration: none; }
+.footer-new .socials { display:flex; gap:10px; margin-top:6px; }
+.footer-new .socials a { width:40px; height:40px; display:inline-flex; align-items:center; justify-content:center; background: rgba(255,255,255,0.03); border-radius:8px; }
+.footer-new .footer-bottom { margin-top: 22px; padding-top: 18px; border-top: 1px solid rgba(255,255,255,0.04); text-align:center; color: rgba(255,255,255,0.7); font-size:0.9rem; }
+
+/* Center the Contact and Liens utiles columns so the heading is aligned with its content */
+.footer-new .f-contact,
+.footer-new .f-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 900px) {
+    .footer-new .footer-columns { flex-direction: column; gap: 20px; }
+}
+@media (max-width: 900px) {
+    .footer-new .f-brand { flex-direction: column; align-items: center; gap: 8px; justify-content: center; }
+    .footer-new .brand-info { align-items: center; }
+    .footer-new .f-col { text-align: center; }
+    .footer-new .social-links { margin-top: 6px; }
+}
+
+/* Footer social links (inline SVGs) */
+.footer-socials { display:flex; gap:10px; margin-top:8px; }
+.footer-socials a { width:40px; height:40px; display:inline-flex; align-items:center; justify-content:center; background: rgba(255,255,255,0.03); border-radius:8px; transition: background .18s, transform .18s; }
+.footer-socials a:hover { background: rgba(255,255,255,0.06); transform: translateY(-3px); }
+.footer-socials svg { width:20px; height:20px; display:block; }
+.footer-socials .material-symbols-outlined { font-size: 20px; color: #fff; display: inline-block; }
+.footer-socials a:hover .material-symbols-outlined { color: var(--orange); transform: translateY(-3px); }
+
+/* Removed generic .social-links to avoid style conflicts; use .footer-new .social-links instead */
+
+.wa-float { position: fixed; bottom: 30px; right: 30px; background: #25d366; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2rem; z-index: 1000; box-shadow: 0 10px 20px rgba(0,0,0,0.2); }
+
+@media (max-width: 900px) {
+    .about-flex, .footer-grid { grid-template-columns: 1fr; gap: 40px; }
+    h1 { font-size: 2.5rem; }
+    .btn-nav { display: none; }
+    .nav-toggle { display: none; }
+    .nav-links { display: flex; flex-direction: column; gap: 12px; position: static; top: auto; left: auto; right: auto; background: transparent; padding: 0; border-radius: 0; box-shadow: none; width: auto; }
+}
+
+/* Additional mobile refinements */
+@media (max-width: 900px) {
+    nav { padding: 0 12px; }
+    header nav { justify-content: space-between; }
+    header nav .logo { align-items: center; }
+    .nav-logo { height: 44px; }
+    .logo-main { font-size: 1.05rem; }
+    .hero { height: auto; padding: 48px 0; }
+    h1 { font-size: 2rem; }
+    .badge { padding: 6px 10px; font-size: 0.75rem; }
+    .partners-grid { gap: 16px; }
+    .partner-card { padding: 12px; min-height: 100px; }
+}
+
+@media (max-width: 600px) {
+    .nav-logo { height: 40px; }
+    h1 { font-size: 1.6rem; }
+    .hero { padding: 36px 0; }
+    .grid-services { gap: 18px; }
+    .s-card { padding: 28px 16px; }
+    .contact-grid { gap: 16px; }
+    .contact-right .contact-map iframe { height: 180px; }
+    .footer-new .footer-columns { gap: 16px; }
+    .footer-new .f-col { min-width: auto; }
+    .footer-new .brand-name { font-size: 1rem; }
+    .footer-new .socials a { width:36px; height:36px; }
+    .socials img.social-icon { width:18px; height:18px; }
+    .partner-card .partner-name { font-size: 0.95rem; padding: 6px 8px; }
+}
+
+/* small tweaks for very small screens */
+@media (max-width: 420px) {
+    .btn-nav { display: none; }
+    .logo-main { font-size: 0.95rem; }
+    .logo-sub { font-size: 0.65rem; }
+}
+
+/* Additional responsive tweaks for common widths */
+@media (max-width: 1366px) {
+    .container { padding: 0 18px; }
+    h1 { font-size: 3rem; }
+    .s-card { padding: 44px 26px; }
+}
+
+@media (max-width: 1024px) {
+    .partners-grid { grid-template-columns: repeat(3, 1fr); }
+    .grid-services { grid-template-columns: repeat(2, 1fr); }
+    h1 { font-size: 2.6rem; }
+    .nav-links { gap: 20px; }
+}
+
+@media (max-width: 768px) {
+    .partners-grid { grid-template-columns: repeat(2, 1fr); gap: 18px; }
+    .about-flex { grid-template-columns: 1fr; gap: 28px; }
+    .hero { padding: 40px 0; }
+    h1 { font-size: 2rem; }
+    .hero-btns { flex-direction: column; align-items: stretch; }
+    .btn-orange, .btn-outline { width: 100%; text-align: center; }
+    .footer-new .f-col { min-width: 220px; }
+}
+
+@media (max-width: 375px) {
+    .container { padding: 0 12px; }
+    h1 { font-size: 1.6rem; }
+    .badge { padding: 5px 10px; }
+    .partners-grid { grid-template-columns: 1fr; }
+    .partner-card { padding: 12px; min-height: 90px; }
+    .footer-new .social-links a { width:36px; height:36px; }
+    .footer-new .brand-name { font-size: 1rem; }
+}
+
+@media (max-width: 320px) {
+    .btn-nav { display: none; }
+    .logo-main { font-size: 0.95rem; }
+    .logo-sub { font-size: 0.65rem; }
+    .nav-logo { height: 36px; }
+    .footer-new .f-col { min-width: auto; }
+}
+
+/* Contact form */
+.contact-section { padding-top: 40px; padding-bottom: 60px; }
+.contact-grid { display: grid; grid-template-columns: 1fr; gap: 24px; align-items: start; }
+.contact-form { background: white; padding: 24px; border-radius: 12px; box-shadow: 0 10px 30px rgba(16,24,40,0.06); }
+.contact-form .form-row { display: flex; gap: 12px; margin-bottom: 12px; }
+.contact-form input[type="text"], .contact-form input[type="email"], .contact-form textarea { width: 100%; padding: 12px 14px; border: 1px solid #e6e6e6; border-radius: 8px; font-size: 0.95rem; }
+.contact-form textarea { resize: vertical; }
+.btn-submit { border: none; cursor: pointer; }
+.contact-info { color: var(--text); background: transparent; }
+.contact-info h3 { margin-bottom: 12px; }
+.contact-success { margin-top: 12px; padding: 10px 12px; background: #ecfdf5; color: #065f46; border-radius: 8px; }
+
+@media (max-width: 900px) {
+    .contact-grid { grid-template-columns: 1fr; }
+    .contact-form .form-row { flex-direction: column; }
+}
+
+.contact-right { display:flex; flex-direction:column; gap:14px; width:100%; }
+.contact-right .contact-map { box-shadow: 0 8px 24px rgba(0,0,0,0.08); overflow:hidden; border-radius:12px; }
+.contact-right .contact-map iframe { width:100%; height:220px; border:0; display:block; }
+
+/* Coordinates overlay on map */
+.contact-right .contact-map { position: relative; }
+.contact-right .map-coordinates { position: absolute; right: 12px; bottom: 12px; background: rgba(0,0,0,0.65); color: #fff; padding: 8px 10px; border-radius: 8px; font-size: 0.9rem; font-weight: 600; box-shadow: 0 6px 18px rgba(0,0,0,0.25); }
+
+@media (max-width: 900px) {
+    .contact-grid { grid-template-columns: 1fr; }
+}
+
+/* Justify contact description and localisation text */
+.contact-section .subtitle, .contact-info .subtitle { text-align: justify; text-justify: inter-word; }
+
+/* Align and justify all content inside the 'Nous contacter' section */
+.contact-section .title-center { text-align: center; }
+.contact-section { display: block; }
+.contact-section .subtitle { max-width: 900px; margin: 0 auto 18px; }
+.contact-section .contact-grid { align-items: start; }
+.contact-form { display: flex; flex-direction: column; gap: 12px; }
+.contact-form .form-row { display: flex; gap: 12px; }
+.contact-form input[type="text"], .contact-form input[type="email"], .contact-form textarea { text-align: left; }
+.contact-info { text-align: justify; text-justify: inter-word; }
+.contact-info p { margin: 6px 0; }
+.contact-right { display: flex; flex-direction: column; justify-content: flex-start; }
+.btn-submit { align-self: flex-start; }
+
+/* Partenaires */
+.partners-hero { padding: 60px 0 20px; text-align: center; }
+.partners-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; align-items: center; }
+.partner-card { background: white; border-radius: 12px; padding: 18px; display:flex; align-items:center; justify-content:center; box-shadow: 0 8px 20px rgba(16,24,40,0.06); min-height:120px; }
+.partner-card img, .partner-card svg { max-width: 100%; width: auto; height: 96px; display: block; object-fit: contain; }
+.partner-card img { height: 96px; }
+.partner-card svg { height: 96px; }
+
+/* Partner name fallback (when using text instead of an image) */
+.partner-card .partner-name {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 1.05rem;
+    color: var(--primary);
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    text-align: center;
+    display: inline-block;
+    padding: 8px 12px;
+    background: transparent;
+    border-radius: 8px;
+    max-width: 100%;
+    white-space: normal;
+    line-height: 1.1;
+}
+
+@media (max-width: 480px) {
+    .partner-card .partner-name { font-size: 0.95rem; padding: 6px 8px; }
+}
+
+/* Contact icons */
+.contact-icon { vertical-align: middle; margin-right: 8px; font-size: 20px; color: var(--orange); }
+
+@media (max-width: 1100px) {
+    .partners-grid { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 800px) {
+    .partners-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 480px) {
+    .partners-grid { grid-template-columns: 1fr; }
+}
+
+/* Center contact-info specifically inside 'Nous contacter' */
+.contact-section .contact-info { text-align: center; text-justify: auto; }
+.contact-section .contact-info p { margin: 8px 0; }
+.contact-section .contact-info p:first-child { font-weight: 600; }
+.contact-section .contact-info { max-width: 720px; margin-left: auto; margin-right: auto; }
