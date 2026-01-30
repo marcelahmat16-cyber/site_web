@@ -13,30 +13,29 @@ body { font-family: 'Poppins', sans-serif; color: var(--text); scroll-behavior: 
 @media (max-width: 600px) {
     .container { padding: 0 6px; max-width: 100vw; }
     .grid-services, .partners-grid {
-        display: flex !important;
-        flex-direction: row !important;
-        flex-wrap: nowrap !important;
-        overflow-x: auto;
-        gap: 12px;
-        justify-content: flex-start;
-        align-items: stretch;
-        width: 100vw;
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        gap: 16px;
+        width: 100%;
+        margin: 0;
+        padding: 0;
         box-sizing: border-box;
-        margin-left: -6px;
-        margin-right: -6px;
-        padding-left: 6px;
-        padding-right: 6px;
     }
     .s-card, .partner-card {
-        min-width: 240px;
-        max-width: 90vw;
-        flex: 0 0 auto;
+        min-width: 0;
+        max-width: 100%;
+        flex: 1 1 100%;
         box-sizing: border-box;
     }
     .partner-card img, .s-card img {
         max-width: 100%;
         height: auto;
         object-fit: contain;
+    }
+    .container {
+        padding: 0 6px;
+        max-width: 100vw;
+        box-sizing: border-box;
     }
 }
 .section { padding: 80px 0; }
