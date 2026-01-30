@@ -107,6 +107,10 @@ input, textarea {
 .footer-links a { display: block; color: #94a3b8; text-decoration: none; margin-bottom: 10px; }
 .social-icons { display: flex; gap: 15px; margin-top: 15px; }
 .social-icons a { color: white; font-size: 1.2rem; }
+/* Espacement ajusté sous les titres de section du footer */
+.footer-links h4, .footer-social h4 {
+    margin-bottom: 10px;
+}
 
 /* Carrousels images dans les cards */
 .carousel-maintenance, .carousel-bobinage, .carousel-conseil {
