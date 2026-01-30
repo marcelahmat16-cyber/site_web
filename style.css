@@ -6,8 +6,39 @@
 }
 
 * { margin:0; padding:0; box-sizing:border-box; }
-body { font-family: 'Poppins', sans-serif; color: var(--text); scroll-behavior: smooth; }
+body { font-family: 'Poppins', sans-serif; color: var(--text); scroll-behavior: smooth; overflow-x: hidden; }
 .container { max-width: 1200px; margin: auto; padding: 0 20px; }
+.container { box-sizing: border-box; }
+
+@media (max-width: 600px) {
+    .container { padding: 0 6px; max-width: 100vw; }
+    .grid-services, .partners-grid {
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: nowrap !important;
+        overflow-x: auto;
+        gap: 12px;
+        justify-content: flex-start;
+        align-items: stretch;
+        width: 100vw;
+        box-sizing: border-box;
+        margin-left: -6px;
+        margin-right: -6px;
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+    .s-card, .partner-card {
+        min-width: 240px;
+        max-width: 90vw;
+        flex: 0 0 auto;
+        box-sizing: border-box;
+    }
+    .partner-card img, .s-card img {
+        max-width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+}
 .section { padding: 80px 0; }
 .bg-dark { background: var(--primary); color: white; }
 
@@ -166,12 +197,16 @@ footer { background: #050a14; color: white; padding: 48px 0 20px; }
     .s-card { padding: 28px 16px; }
     .contact-grid { gap: 16px; }
     .contact-right .contact-map iframe { height: 180px; }
-    .footer-new .footer-columns { gap: 16px; }
+    .footer-new .footer-columns { gap: 16px; flex-direction: row; flex-wrap: nowrap; justify-content: center; align-items: center; }
     .footer-new .f-col { min-width: auto; }
     .footer-new .brand-name { font-size: 1rem; }
     .footer-new .socials a { width:36px; height:36px; }
     .socials img.social-icon { width:18px; height:18px; }
     .partner-card .partner-name { font-size: 0.95rem; padding: 6px 8px; }
+    .nav-links { flex-direction: row !important; gap: 10px; justify-content: center; align-items: center; width: 100%; }
+    .nav-links li { width: auto; }
+    .nav-links a { font-size: 0.95rem; }
+}
 }
 
 /* small tweaks for very small screens */
