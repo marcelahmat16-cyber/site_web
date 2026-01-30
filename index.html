@@ -1,31 +1,36 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ENTREPRISE | Expertise Électromécanique Tchad</title>
-    
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&family=Inter:wght@300;400;600&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <header class="main-header">
         <nav class="container">
             <div class="logo">
-                <img src="Logo.jpg" alt="ABC Logo" class="nav-logo">
+                <img src="logo.jpg" alt="ABC Logo" class="nav-logo">
                 <span class="logo-text"><span>ENTREPRISE</span></span>
             </div>
-            
+
             <button class="nav-toggle" id="nav-toggle" aria-label="Menu">
                 <i class="fas fa-bars"></i>
             </button>
 
             <ul class="nav-links" id="nav-links">
-                <li><a href="#accueil">Accueil</a></li>
-                <li><a href="#services">Services</a></li>
+                 <li><a href="#accueil">Accueil</a></li>
+                 <li><a href="a-propos.html">À propos</a></li>
+                 <li><a href="#services">Services</a></li>
                 <li><a href="#partners">Partenaires</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li><a href="https://wa.me/23563113764" class="btn-cta">Urgence 24h/7j</a></li>
@@ -35,13 +40,14 @@
 
     <main>
         <section id="accueil" class="hero-section">
-                    <section id="a-propos" class="section bg-light">
-                    </section>
+            <section id="a-propos" class="section bg-light">
+            </section>
             <div class="container hero-grid">
                 <div class="hero-content reveal">
                     <span class="top-badge">Expertise depuis 2007</span>
                     <h1>L'excellence <span>électromécanique</span> au Tchad</h1>
-                    <p>Atelier formel spécialisé dans le bobinage, la maintenance et le conseil technique à N'Djamena.</p>
+                    <p>Atelier formel spécialisé dans le bobinage, la maintenance et le conseil technique à N'Djamena.
+                    </p>
                     <div class="hero-actions">
                         <a href="#services" class="btn-primary">Découvrir nos services</a>
                         <a href="#contact" class="btn-secondary">Nous localiser</a>
@@ -56,28 +62,46 @@
                     <h2>Nos Spécialités</h2>
                     <p>Des solutions techniques sur-mesure pour l'industrie</p>
                 </div>
-                
+
                 <div class="services-grid">
                     <div class="glass-card reveal" style="padding:22px 12px;min-width:0;max-width:320px;margin:auto;">
                         <div class="card-icon" style="display:flex;justify-content:center;align-items:center;margin-bottom:12px;">
-                            <img src="maintenance1.jpg" alt="Bobinage" class="service-icon" style="width:130px;height:100px;object-fit:cover;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.07);">
+                            <div class="carousel-bobinage" style="width:130px;height:100px;overflow:hidden;position:relative;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.07);">
+                                <img src="bobinage1.jpg" alt="Bobinage 1" class="carousel-img-bobinage" style="width:130px;height:100px;object-fit:cover;position:absolute;left:0;top:0;opacity:1;transition:opacity 0.5s;">
+                                <img src="bobinage2.jpg" alt="Bobinage 2" class="carousel-img-bobinage" style="width:130px;height:100px;object-fit:cover;position:absolute;left:0;top:0;opacity:0;transition:opacity 0.5s;">
+                                <img src="bobinage3.jpg" alt="Bobinage 3" class="carousel-img-bobinage" style="width:130px;height:100px;object-fit:cover;position:absolute;left:0;top:0;opacity:0;transition:opacity 0.5s;">
+                            </div>
                         </div>
                         <h3 style="font-size:1.08rem;margin-bottom:8px;text-align:center;">Bobinage</h3>
-                        <p style="font-size:0.97rem;line-height:1.5;margin-bottom:0;text-align:justify;">Réparation et fabrication de moteurs et générateurs électriques avec précision.</p>
+                        <p style="font-size:0.97rem;line-height:1.5;margin-bottom:0;text-align:justify;">
+                            Réparation, rebobinage et fabrication sur mesure de moteurs et générateurs AC/DC 
+                            pour garantir une performance industrielle optimale.</p>
                     </div>
                     <div class="glass-card reveal" style="padding:22px 12px;min-width:0;max-width:320px;margin:auto;">
-                        <div class="card-icon" style="display:flex;justify-content:center;align-items:center;margin-bottom:12px;">
-                            <img src="maintenance.jpg" alt="Maintenance" class="service-icon" style="width:130px;height:100px;object-fit:cover;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.07);">
-                        </div>
+                            <div class="card-icon" style="display:flex;justify-content:center;align-items:center;margin-bottom:12px;">
+                                <div class="carousel-maintenance" style="width:130px;height:100px;overflow:hidden;position:relative;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.07);">
+                                    <img src="Maintenance2.png" alt="Maintenance 1" class="carousel-img" style="width:130px;height:100px;object-fit:cover;position:absolute;left:0;top:0;opacity:1;transition:opacity 0.5s;">
+                                    <img src="maintenance1.jpg" alt="Maintenance 2" class="carousel-img" style="width:130px;height:100px;object-fit:cover;position:absolute;left:0;top:0;opacity:0;transition:opacity 0.5s;">
+                                    <img src="maintenance3.png" alt="Maintenance 3" class="carousel-img" style="width:130px;height:100px;object-fit:cover;position:absolute;left:0;top:0;opacity:0;transition:opacity 0.5s;">
+                                    <img src="maintenance4.png" alt="Maintenance 4" class="carousel-img" style="width:130px;height:100px;object-fit:cover;position:absolute;left:0;top:0;opacity:0;transition:opacity 0.5s;">
+                                </div>
+                            </div>
                         <h3 style="font-size:1.08rem;margin-bottom:8px;text-align:center;">Maintenance</h3>
-                        <p style="font-size:0.97rem;line-height:1.5;margin-bottom:0;text-align:justify;">Maintenance préventive, curative et fourniture de pièces de rechange certifiées.</p>
+                        <p style="font-size:0.97rem;line-height:1.5;margin-bottom:0;text-align:justify;">Maintenance
+                            Approvisionnement rapide en pièces certifiées et maintenance mécanique spécialisée pour réduire vos temps d'arrêt.</p>
                     </div>
                     <div class="glass-card reveal" style="padding:22px 12px;min-width:0;max-width:320px;margin:auto;">
                         <div class="card-icon" style="display:flex;justify-content:center;align-items:center;margin-bottom:12px;">
-                            <img src="conseil.jpg" alt="Conseil & Plan" class="service-icon" style="width:130px;height:100px;object-fit:cover;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.07);">
+                            <div class="carousel-conseil" style="width:130px;height:100px;overflow:hidden;position:relative;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.07);">
+                                <img src="Conseiller1.jpg" alt="Conseil 1" class="carousel-img-conseil" style="width:130px;height:100px;object-fit:cover;position:absolute;left:0;top:0;opacity:1;transition:opacity 0.5s;">
+                                <img src="Conseiller2.jpg" alt="Conseil 2" class="carousel-img-conseil" style="width:130px;height:100px;object-fit:cover;position:absolute;left:0;top:0;opacity:0;transition:opacity 0.5s;">
+                                <img src="Conseiller3.jpg" alt="Conseil 3" class="carousel-img-conseil" style="width:130px;height:100px;object-fit:cover;position:absolute;left:0;top:0;opacity:0;transition:opacity 0.5s;">
+                            </div>
                         </div>
                         <h3 style="font-size:1.08rem;margin-bottom:8px;text-align:center;">Conseil & Plan</h3>
-                        <p style="font-size:0.97rem;line-height:1.5;margin-bottom:0;text-align:justify;">Assistance technique et planification pour optimiser vos installations.</p>
+                        <p style="font-size:0.97rem;line-height:1.5;margin-bottom:0;text-align:justify;">Assistance
+                            Assistance technique personnalisée et élaboration de plans de maintenance préventive pour 
+                            optimiser la durée de vie de vos installations.</p>
                     </div>
                 </div>
             </div>
@@ -93,14 +117,9 @@
                     <img src="brasseries-du-Tchad-1024x421.png" alt="BDT">
                     <img src="CIMAF.png" alt="CIMAF">
                     <img src="tractafric-1.png" alt="Tractafric">
-                    <img src="CGCOC.jpg" alt="CGCOC">
-                    <div class="partner-text">EXCEL</div>
-                    <div class="partner-text">SOBOIS-T</div>
-                    <div class="partner-text">S3C</div>
-                    <div class="partner-text">SOPRAT</div>
-                    <div class="partner-text">TchadElec</div>
+                    <img src="Tchad_Elect.png" alt="TchadElec">
                     <div class="partner-text">RAZEL-Tchad</div>
-                    <div class="partner-text">SOPEIN-T</div>
+
                 </div>
             </div>
         </section>
@@ -112,7 +131,8 @@
                     <div class="info-item">
                         <i class="fas fa-map-marker-alt"></i>
                         <p>Avenue Nelson Mandela, Farcha, N'Djamena<br>
-                        <span>GPS: 12.127782 / 14.985429</span></p>
+                            <span>GPS: 12.127782 / 14.985429</span>
+                        </p>
                     </div>
                     <div class="info-item">
                         <i class="fas fa-phone-alt"></i>
@@ -123,11 +143,12 @@
                         <p>acb.equipro@gmail.com</p>
                     </div>
                 </div>
-                
+
                 <form action="https://formspree.io/f/acb.equipro@gmail.com" method="POST" class="contact-form reveal">
                     <input type="text" name="name" placeholder="Votre nom complet" required>
                     <input type="email" name="email" placeholder="Votre e-mail" required>
-                    <textarea name="message" rows="5" placeholder="Comment pouvons-nous vous aider ?" required></textarea>
+                    <textarea name="message" rows="5" placeholder="Comment pouvons-nous vous aider ?"
+                        required></textarea>
                     <button type="submit" class="btn-primary">Envoyer le message</button>
                 </form>
             </div>
@@ -136,26 +157,29 @@
 
     <footer class="footer">
         <div class="container footer-grid">
-            <div class="footer-about">
-                <span class="logo-text">ABC <span>ENTREPRISE</span></span>
-                <p>Maintenir la puissance de l'industrie tchadienne avec rigueur et innovation.</p>
+            <div class="footer-about" style="display:flex;flex-direction:column;align-items:center;">
+                <span class="logo-text" style="text-align:center;">ABC <span>ENTREPRISE</span></span>
+                <p style="text-align:center;max-width:320px;margin:10px auto 0 auto;">Maintenir la puissance de l'industrie tchadienne avec rigueur et innovation.</p>
             </div>
-            <div class="footer-links">
-                <h4>Navigation</h4>
+            <div class="footer-links" style="display:grid;grid-template-columns:1fr 1fr;gap:6px 16px;justify-items:center;align-items:center;">
+                <h4 style="grid-column:1/3;text-align:center;">Navigation</h4>
                 <a href="#accueil">Accueil</a>
+                <a href="#a-propos">À propos</a>
                 <a href="#services">Services</a>
                 <a href="#contact">Contact</a>
             </div>
             <div class="footer-social">
                 <h4>Suivez-nous</h4>
                 <div class="social-icons">
-                        <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://tiktok.com" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
-                        <a href="https://wa.me/23563113764" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="https://tiktok.com" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://wa.me/23563113764" target="_blank" aria-label="WhatsApp"><i
+                            class="fab fa-whatsapp"></i></a>
                 </div>
             </div>
         </div>
-        <div class="footer-copyright">
+        <div class="footer-copyright" style="text-align:center;margin-top:32px;">
             <p>&copy; 2026 ABC ENTREPRISE - Tous droits réservés.</p>
         </div>
     </footer>
@@ -166,4 +190,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>

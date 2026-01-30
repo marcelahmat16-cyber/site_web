@@ -20,7 +20,7 @@ body {
 }
 
 .container { max-width: 1200px; margin: 0 auto; padding: 0 25px; }
-.section { padding: 100px 0; }
+.section { padding: 50px 0; }
 .bg-light { background: var(--bg-light); }
 
 /* HEADER & NAVIGATION */
@@ -102,11 +102,42 @@ input, textarea {
 }
 
 /* FOOTER */
-.footer { background: var(--primary); color: white; padding: 80px 0 20px; }
+.footer { background: var(--primary); color: white; padding: 60px 0 24px; }
 .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 50px; }
 .footer-links a { display: block; color: #94a3b8; text-decoration: none; margin-bottom: 10px; }
 .social-icons { display: flex; gap: 15px; margin-top: 15px; }
 .social-icons a { color: white; font-size: 1.2rem; }
+
+/* Carrousels images dans les cards */
+.carousel-maintenance, .carousel-bobinage, .carousel-conseil {
+    width: 100%;
+    aspect-ratio: 4/3;
+    max-width: 100%;
+    min-width: 0;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+.carousel-maintenance img,
+.carousel-bobinage img,
+.carousel-conseil img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: opacity 0.5s;
+    border-radius: 12px;
+}
+.carousel-maintenance img:first-child,
+.carousel-bobinage img:first-child,
+.carousel-conseil img:first-child {
+    opacity: 1;
+}
 
 /* RESPONSIVE */
 .nav-toggle { display: none; font-size: 1.5rem; }
