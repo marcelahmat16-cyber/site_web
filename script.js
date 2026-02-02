@@ -47,6 +47,13 @@ document.addEventListener('DOMContentLoaded', () => {
         navLinks.classList.toggle('active');
     });
 
+    // Fermer le menu mobile après avoir cliqué sur un lien
+    navLinks.addEventListener('click', (e) => {
+        if (e.target.tagName === 'A') {
+            navLinks.classList.remove('active');
+        }
+    });
+
     // Animation au scroll
     const observerOptions = { threshold: 0.1 };
     const observer = new IntersectionObserver((entries) => {
