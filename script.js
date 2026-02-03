@@ -2,12 +2,32 @@
 document.addEventListener('DOMContentLoaded', function() {
     const carouselsBobinage = document.querySelectorAll('.carousel-bobinage');
     carouselsBobinage.forEach(carousel => {
-        const images = carousel.querySelectorAll('.carousel-img-bobinage');
+        carousel.style.height = '200px';
+        carousel.style.overflow = 'hidden';
+        const images = carousel.querySelectorAll('.carousel-img');
+        images.forEach((img, index) => {
+            img.style.position = 'absolute';
+            img.style.top = '0';
+            img.style.left = '0';
+            img.style.width = '100%';
+            img.style.height = '200px';
+            img.style.objectFit = 'cover';
+            img.style.borderRadius = '10px';
+            img.style.transition = 'transform 0.5s ease, opacity 0.5s ease';
+            img.style.opacity = '0';
+        });
         let current = 0;
+        images[current].style.opacity = '1';
+        images.forEach((img, index) => {
+            img.style.transform = `translateX(${(index - current) * -100}%)`;
+        });
         setInterval(() => {
-            images[current].style.opacity = 0;
+            images.forEach(img => img.style.opacity = '0');
             current = (current + 1) % images.length;
-            images[current].style.opacity = 1;
+            images[current].style.opacity = '1';
+            images.forEach((img, index) => {
+                img.style.transform = `translateX(${(index - current) * -100}%)`;
+            });
         }, 2000);
     });
 });
@@ -16,25 +36,101 @@ document.addEventListener('DOMContentLoaded', function() {
 document.addEventListener('DOMContentLoaded', function() {
     const carouselsConseil = document.querySelectorAll('.carousel-conseil');
     carouselsConseil.forEach(carousel => {
-        const images = carousel.querySelectorAll('.carousel-img-conseil');
+        carousel.style.height = '200px';
+        carousel.style.overflow = 'hidden';
+        const images = carousel.querySelectorAll('.carousel-img');
+        images.forEach((img, index) => {
+            img.style.position = 'absolute';
+            img.style.top = '0';
+            img.style.left = '0';
+            img.style.width = '100%';
+            img.style.height = '200px';
+            img.style.objectFit = 'cover';
+            img.style.borderRadius = '10px';
+            img.style.transition = 'transform 0.5s ease, opacity 0.5s ease';
+            img.style.opacity = '0';
+        });
         let current = 0;
+        images[current].style.opacity = '1';
+        images.forEach((img, index) => {
+            img.style.transform = `translateX(${(index - current) * -100}%)`;
+        });
         setInterval(() => {
-            images[current].style.opacity = 0;
+            images.forEach(img => img.style.opacity = '0');
             current = (current + 1) % images.length;
-            images[current].style.opacity = 1;
+            images[current].style.opacity = '1';
+            images.forEach((img, index) => {
+                img.style.transform = `translateX(${(index - current) * -100}%)`;
+            });
         }, 2000);
     });
 });
+
 // Carousel pour la carte Maintenance
 document.addEventListener('DOMContentLoaded', function() {
-    const carousels = document.querySelectorAll('.carousel-maintenance');
-    carousels.forEach(carousel => {
+    const carouselsMaintenance = document.querySelectorAll('.carousel-maintenance');
+    carouselsMaintenance.forEach(carousel => {
+        carousel.style.height = '200px';
+        carousel.style.overflow = 'hidden';
         const images = carousel.querySelectorAll('.carousel-img');
+        images.forEach((img, index) => {
+            img.style.position = 'absolute';
+            img.style.top = '0';
+            img.style.left = '0';
+            img.style.width = '100%';
+            img.style.height = '200px';
+            img.style.objectFit = 'cover';
+            img.style.borderRadius = '10px';
+            img.style.transition = 'transform 0.5s ease, opacity 0.5s ease';
+            img.style.opacity = '0';
+        });
         let current = 0;
+        images[current].style.opacity = '1';
+        images.forEach((img, index) => {
+            img.style.transform = `translateX(${(index - current) * -100}%)`;
+        });
         setInterval(() => {
-            images[current].style.opacity = 0;
+            images.forEach(img => img.style.opacity = '0');
             current = (current + 1) % images.length;
-            images[current].style.opacity = 1;
+            images[current].style.opacity = '1';
+            images.forEach((img, index) => {
+                img.style.transform = `translateX(${(index - current) * -100}%)`;
+            });
+        }, 2000);
+    });
+});
+
+// Carousel pour la carte Fourniture
+document.addEventListener('DOMContentLoaded', function() {
+    const carouselsFourniture = document.querySelectorAll('.carousel-fourniture');
+    carouselsFourniture.forEach(carousel => {
+        carousel.style.height = '200px';
+        carousel.style.width = '250px';
+        carousel.style.overflow = 'hidden';
+        const images = carousel.querySelectorAll('.carousel-img');
+        images.forEach((img, index) => {
+            img.style.position = 'absolute';
+            img.style.top = '0';
+            img.style.left = '0';
+            img.style.width = '100%';
+            img.style.height = '200px';
+            img.style.objectFit = 'contain';
+            img.style.borderRadius = '10px';
+            img.style.transition = 'transform 0.5s ease, opacity 0.5s ease';
+            img.style.opacity = '0';
+        });
+        let current = 0;
+        images[current].style.opacity = '1';
+        images.forEach((img, index) => {
+            img.style.transform = `translateX(${(index - current) * -100}%)`;
+        });
+        setInterval(() => {
+            images.forEach(img => img.style.opacity = '0');
+            current = (current + 1) % images.length;
+            images[current].style.opacity = '1';
+            images.forEach((img, index) => {
+                img.style.transform = `translateX(${(index - current) * -100}%)`;
+            });
         }, 2000);
     });
 });
