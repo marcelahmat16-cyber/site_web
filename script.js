@@ -106,6 +106,7 @@ document.addEventListener('DOMContentLoaded', function() {
     carouselsFourniture.forEach(carousel => {
         carousel.style.height = '200px';
         carousel.style.width = '250px';
+        carousel.style.margin = '0 auto';
         carousel.style.overflow = 'hidden';
         const images = carousel.querySelectorAll('.carousel-img');
         images.forEach((img, index) => {
