@@ -1,0 +1,16 @@
+{
+    "name": "ACB ENTREPRISE - Électromécanique Tchad",
+    "short_name": "ACB ENTREPRISE",
+    "description": "Expertise en électromécanique au Tchad : bobinage, maintenance et équipements industriels.",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#f97316",
+    "icons": [
+        {
+            "src": "logo.jpg",
+            "sizes": "192x192",
+            "type": "image/jpeg"
+        }
+    ]
+}
